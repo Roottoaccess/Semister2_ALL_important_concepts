@@ -1,0 +1,73 @@
+Welcome to the Data Communication and Networkings concepts......
+
+1. The ip address is extended into 2 categories -> IPV4 and IPV6
+
+2. In the IPV4 concept we looked at that it is been followed by the concept of ClassFull Addressing and Classless Addressing
+
+	In the classfull addressing there are 5 classes where Ip's are supplied in the organizations
+class A, class B, class C, class D, class E
+
+	Different ranges of the classes:-
+class A: 0 - 127
+class B: 128 - 191
+class C: 192 - 223
+class D: 224 - 239
+class E: 240 - 255
+
+this is for the dotted representation like -> 192.168.2.4	
+
+
+for binary representation the range are:-
+
+class A: 0
+class B: 10
+class C: 110
+class D: 1110
+class E: 1111
+
+and in the class A there is 1 NetID and 3 HostId
+in the class B there are 2 NetId and 2 HostId
+in the class C there are 3 NetId and 1 HostId
+in the class D and class E there is no concept of NetId and HostID
+
+
+* There are also something like the Logical Address and Physical Address
+
+1. Logical Address are those address which are been understadable by the routers or the network devices (like in binary)
+2. Physical Address are those addres which are been understadeble by us proper dotted numbers like 192.168.20.2
+
+
+* One problem is there in the ClassFull Addressing is that in the ClassFull Addressing there are classes and each claass have
+different ranges so like if an organisation needs 100 ip address and they have provided with class A, so the ip after 100 
+will be waste so in class B and if an big organization provided with class C which has very less range to fit will again
+occurs a problem so its a issue with classFull Addressing so to overcome this problem ClassLess addressing are been introduced
+
+ClassLess Addressing -> In the concept of classless addressing the problem resolved, by observing the range of the organizatons
+the ip address are provided not more or not less than that, but this are also in blocks or groups provided....
+
+Notation: x.y.z.w/s -> where s is the marks.
+suppose for example 200.10.20.40/28 , so 28 no of 1's
+
+	32 bites
+BlockID -> 28, HostId -> 32 - 28 = 4 , so 2^4 = 16 , so 16 is the HostId
+
+so -> 11111111.11111111.11111111.11110000
+	
+	128  64  32  16  8  4  2  1 -> (2^power)
+
+so -> 255.255.255.240
+
+		It is also called Classless Interdomain Routing (CIDR)
+200.10.20.40/8
+200.10.20.00101000
+200.10.20.00100000
+
+so the final result is 200.10.20.32/8 -> Network address !!
+
+	* In the optic fiber cable the data transfer through light so it is that fast..
+
+
+In a perticular network the ip's are unique....
+
+192.168.2.1 -> Octed -> 1byte -> 8bites
+
