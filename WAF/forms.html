@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<style>
+    .bg{
+        padding: 5px;
+        margin: 5px;
+    }
+</style>
+
+<body>
+    <u>
+        <h2 align="center"><font color="green">
+            Forms in HTML
+        </font></h2>
+    </u>
+<br>
+
+<hr>
+<br>
+<center>
+    <!-- method = 'get' or 'post' req from the server we will use the get method and when we want to send the data to the server the we will use the post method 
+    go through all the controls in the form 
+    checkbox we can select muktiple options and in the radio button we could only select only one check box
+    -->
+    <div class="forms">
+        <form action="" method="post">
+            <label for="name">Username: </label>
+            <input type="text" size="25" maxlength="4" placeholder="FullName">
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" size="20" maxlength="8" placeholder="Only 8 character password">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email"><br><br>
+            <input type="checkbox" name="groceries" value="milk">
+            Milk
+            <input type="checkbox" name="groceries" value="bread">
+            Bread
+            <input type="checkbox" name="groceries" value="eggs">
+            Eggs
+            <br><br>
+            <input class="bg" type="submit" name="submit">
+            <input class="bg" type="reset" name = "reset" value="clear">
+        </form>
+    </div>
+</center>
+
+<br><hr><br>
+</body>
+</html>
