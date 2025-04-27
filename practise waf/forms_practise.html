@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms practise for HTML</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: bisque;
+        }
+        table{
+            border: 2px solid black;
+        }
+        th{
+            padding: 5px;
+        }
+        td{
+            padding: 10px;
+        }
+    </style>
+<body>
+    <h2 align="center"><font color="brown"><u>
+        HTML Forms for Practical
+    </u></font></h2>
+
+    <br><br>
+
+    <center>
+        <form action="" method="post">
+            <table cellspacing="10">
+                <tr>
+                    <th><label for="uname">User Name: </label></th>
+                    <td><input type="text" placeholder="FullName" size="25"></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email: </label></th>
+                    <td><input type="email" name="email" id="email" placeholder="Email Address" size="25"></td>
+                </tr>
+                <tr>
+                    <th><label for="password">Password: </label></th>
+                    <td><input type="password" name="password" id="password" placeholder="Password" size="25"></td>
+                </tr>
+                <tr>
+                    <th><label for="textarea">Feedback: </label></th>
+                    <td>
+                        <textarea name="feedback" id="feedback" placeholder="Give your feedback"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="groceries" id="groceries" value="bread"> Bread
+                    </td>
+                    <td>
+                        <input type="checkbox" name="groceries" id="groceries" value="milk"> Milk
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="car" id="car" value="BMW"> BMW
+                    </td>
+                    <td>
+                        <input type="radio" name="car" id="car" value="Porshe"> Porshe
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="submit" value="Submit">
+                    </th>
+                    <th>
+                        <input type="reset" value="Reset">
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
