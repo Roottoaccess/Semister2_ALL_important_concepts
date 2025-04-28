@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Basic Day2</title>
+</head>
+<style>
+    .submit{
+        padding: 15px;
+        border-radius: 10px;
+        background-color: yellow;
+        color: red;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-color: black;
+    }
+    *{
+        background-color: whitesmoke;
+    }
+</style>
+<body>
+    <!-- select is the tag for creating the menus in HTML
+        we can select one item at a time in the menu....
+        by default the size of the menu will be one....
+        size attribute can be use to select 2 items at a time in the select tag.....
+    -->
+    <h2 align="center">
+        <font color="green">Working with Forms</font>
+    </h2>
+    <form action="" method="post">
+
+        <p>
+            <label for="Age Value">Age Value: </label>
+            <input type="radio" name="age" id="age" value="under 20"> under 20
+            <input type="radio" name="age" id="age" value="20-35"> 20-35
+            <input type="radio" name="age" id="age" value="above 35"> Above 35 
+            <br><br>
+            <p>
+                Grocery items list: 
+                <select name="groceries" id="groceries" size="4">
+                    <option value="milk">Milk</option>
+                    <option value="bread">Bread</option>
+                    <option value="eggs">Eggs</option>
+                    <option value="cheese">Cheese</option>
+                </select>
+            </p>
+            <br><br>
+            <!-- Creating a color picker in HTML -->
+            <label for="color">Color Picker: </label>
+            <input type="color" name="color" id="color">
+                <p>
+                    Suggestions or Feedback
+                </p>
+                <textarea name="suggesstions" id="" rows="10" cols="40"></textarea>
+            <br><br>
+            <input type="reset" value="reset" class="submit">
+        </p>
+        <label for="phone number">Phone Number: </label>
+                <input type="number" name="num" id="num">
+                <br><br> <!-- This is the url input for taking only url format not anything else -->
+        <label for="web address">Website Address: </label>
+        <input type="url" name="web" id="web" placeholder="www.abc.com">
+        <br><br>
+        <!-- Creating the textarea -->
+             <!-- Div tag and <legend> tags for seperating the blocks to make the form looks perfect and clean....
+                <fieldset>    
+                <legend>
+                <div>
+            -->
+        <!-- Starting from here -->
+<!-- Important to learn -->
+        <fieldset>
+            <legend>About the offending of the flims</legend>
+            <div>
+                <label for="film">The film in question</label>
+                <input type="text" name="film" id="film" placeholder="King Kong" required autofocus="true" autocomplete="off">
+            </div>
+        </fieldset>
+        <br><br>
+        <!-- Autofocus attribute for autofocussing focuing by default where it is used.....
+            Autocomplete attribute is also been use, its verifies the value and tells its incomplete.... 
+        -->
+
+        <!-- There is also something in html known as DataList 
+        listing out all the items starting with the matching values 
+        -->
+<!-- Important to learn -->
+        <div>
+            <label for="award won">Award won </label>
+            <input type="text" id="award won" name="award won" list="awards">
+            <datalist id="awards">
+                <select name="" id="">
+                    <option value="best director">Best Director</option>
+                    <option value="best movie">Best Movie</option>
+                    <option value="best screenplay">Best screenplay</option>
+                </select>
+            </datalist>
+        </div><br>
+        <!-- <br><br> -->
+        <input type="submit" value="Submit" class="submit">
+    </form>
+</body>
+</html>
