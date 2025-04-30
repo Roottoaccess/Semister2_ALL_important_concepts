@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms </title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;
+    }
+</style>
+<body><br>
+    <h2 align="center">
+        <font color="brown">Another Form Example</font>
+    </h2>
+    <br><br>
+    <form action="" method="get">
+        <label for="tel"> Enter telephone number: </label>
+        <input type="number" name="tel" id="tel" placeholder="88888888" autocomplete="off" required>
+        <br><br>
+        <label for="search"> Enter the search item: </label>
+        <input type="search" name="search" id="search" placeholder="what you want to search" size="25" autofocus><br><br>
+        <!-- Pattern is also use in this form input -->
+        <label for="date"> Enter your date of joining: </label>
+        <input type="date" name="date " id="date" value="">
+        <label for="time"> Enter your time of joining: </label>
+        <input type="time" name="time" id="time">
+        <br><br>
+        <label for="month"> Enter month of joining: </label>
+        <input type="month" name="month" id="month">
+        <label for="week"> Enter the week of joining: </label>
+        <input type="week" name="week" id="week">
+        <br><br>
+        <label for="range">Range</label>
+        <input type="range" name="range" id="range" min="1" max="10" value="5">
+    </form>
+</body>
+</html>
