@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practising </title>
+</head>
+<body>
+    <!-- Here practising the concept of :-
+        radio button, -> done
+        select attribute, -> done
+        color bar in html -> done
+        textarea as suggession of feedback -> done
+        one reset button for clearing all the things -> done
+        phone number taking -> done
+        web address input taking -> done
+        fieldset -> legend (-> done)
+        datalist -> done
+        submit button for submitting it to the end..... -> (done)
+        date, time , month, range are the additional features in the forms section....
+    -->
+    <h2 align="center">
+        <font color="red">Forms Advance Concept</font>
+    </h2>
+    <h3><font color="blue">This is the Radio Button</font></h3>
+    <label for="car">Cars: </label>
+    <input type="radio" name="car" id="car" value="BMW"> BMW
+    <input type="radio" name="car" id="car" value="Mercedies"> Mercedies
+    <input type="radio" name="car" id="car" value="Toyota">
+     Toyota <br>
+    <h3><font color="blue">This is the Select Attribute</font></h3>
+    <label for="groceries">Grocerie Items -> </label>
+    <select name="groceries" id="groceries">
+        <option value="Milk">Milk</option>
+        <option value="Bread">Bread</option>
+        <option value="Egg">Egg</option>
+        <option value="Banana">Banana</option>
+    </select>
+    <h3><font color="blue">This is the ColorBar in HTML</font></h3>
+    <label for="colorbar">Choose your favorate color: </label>
+    <input type="color" name="color" id="color">
+    <h3><font color="blue">This is the Text Area Field</font></h3>
+    <label for="textarea">suggession for this website if any</label><br>
+    <textarea cols="35" rows="10" placeholder="Give your feedback for improving the website...."></textarea>
+    <h3><font color="blue">Reset button for clearing all the stuffs</font></h3>
+    <input type="reset" name="reset" id="reset" value="reset">
+    <h3><font color="blue">This is input field for taking the phone number</font></h3>
+    <label for="num">Enter your 10 digit phone number: </label>
+    <input type="number" name="num" id="num" placeholder="999 XXX 888 X" required autocomplete="off">
+    <h3><font color="blue">This is input field for taking the website address from the user to search</font></h3>
+    <label for="web">Enter the website address to search: </label>
+    <input type="search" name="search" id="search" placeholder="search the website....">
+    <h3><font color="blue">Creating a FieldSet in HTML</font></h3>
+    <fieldset>
+        <legend>Introduction to myself</legend>
+        <p>
+            <pre>This is the HTML fieldset where there is a fieldset tag and inside the fieldset tag <br>there is legend tag inside the legend tag I can give the title of the legend tag <br>
+            This is the introduction of the fieldset..attribute</pre>
+        </p>
+    </fieldset>
+    <h3><font color="blue">Creating the datalist in HTML</font></h3>
+    <label for="network_devices">Network Devices: </label>
+    <input type="text" name="network_devices" id="network_devices" list="nd">
+    <datalist id="nd">
+        <select>
+            <option value="Hub"> Hub </option>
+            <option value="Switch"> Switch </option>
+            <option value="Router"> Router </option>
+            <option value="Satellite"> Satellite </option>
+        </select>
+    </datalist>
+
+    <h3><font color="blue">Creating the submit button</font></h3>
+    <label for="submit">Submit here -> </label>
+    <input type="submit" value="submit">
+
+    <h3><font color="blue">Additional feature of the HTML5 forms</font></h3>
+    <!-- Date in the HTML forms -->
+    <label for="date">Give todays Date:- </label>
+    <input type="date" name="date" id="date">
+
+     <!-- Month in the HTML forms -->
+      <label for="month">Enter this Month:- </label>
+      <input type="month" name="month" id="month">
+<br><br>
+      <!-- We can also give the range of the bar in the HTML5 -->
+       <label for="range">Range:- </label>
+       <input type="range" name="range" id="range" min="1" max="5" value="4">
+       <br><hr><br>
+</body>
+
+</html>
