@@ -1,0 +1,26 @@
+/* .thing::before
+{
+    content: "spooky";
+}
+.thing::after{
+    content: "aftercontent";
+} */
+*{
+    background-color: antiquewhite;
+}
+.heading1{
+    color: blue;
+    font-size: 22px;
+}
+
+.para1{
+    align-content: center;
+    font-size: 15px;
+    color: purple;
+    font-style: italic;
+}
+
+#heading2{
+    color: green;
+    font-style: oblique;
+}
