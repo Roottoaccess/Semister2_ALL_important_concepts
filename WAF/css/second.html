@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another day another learning</title>
+</head>
+<style>
+    .redness {
+        color: hsl(359, 99%, 50%, 0.8);
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    p{
+        padding: 10px;
+        border: dotted;
+        border-color: #0000ff;
+    }
+    @media(color-gamut:srgb){
+        p{
+            background: #f4ae8a;
+        }
+    }
+</style>
+<body>
+    <h1>Specify color using HEX value</h1>
+    <h2 style="background-color: #ff0000; color: whitesmoke;">
+        Heading 1
+    </h2>
+    <h2 style="background-color: #0000ff; color: whitesmoke;">
+        Heading 2
+    </h2>
+    <h2 style="background-color: #00ff00;">
+        Heading 3
+    </h2>
+    <h2 style="background-color: #ee82ee;">
+        Heading 4
+    </h2>
+    <h2 style="background-color: #ffa500;">
+        Heading 5
+    </h2>
+    <p class="redness">
+        By using the value for red, green and blue, you will get different shaged of gray: 
+    </p>
+    <h2 style="background-color: #787878; color: white; padding: 12px;">
+        External Heading
+    </h2>
+    <pre>
+         Color Gamet Example 
+    </pre>
+    <p>
+        This is a paragraph with color gamut usage
+    </p>
+</body>
+</html>

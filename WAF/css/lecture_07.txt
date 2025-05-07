@@ -1,0 +1,76 @@
+There are 3 types of css are there.....
+
+1. Inline css
+2. Document css <style> </style>
+3. External css -> link css to another page.....
+
+
+<link ref="stylesheet" herf="path link" />
+
+<p style="align-content:right; 
+    color: blue; 
+    font-size: 12px;">
+xyz </p>
+
+CSS Selectors......
+* Normal Selector
+* Class Selector
+* id selector
+
+h1{
+    # Example for normal selector....
+}
+
+.container{
+    # Example for class selector....
+}
+
+#demo{
+    # Example for id selector.....
+}
+
+RGB, RGBA, ALPHA, HSL, HSB -> Hue Saturation Brightness..... , HEX -> Hexadecimal format of the value.......
+
+In RBG color -> (Red, Green, Blue)....
+
+# Hexadecimal
+.redness{
+    color: #fe0208;
+}
+
+# RGB
+.redness{
+    color: rgb(__,__,__);
+}
+
+
+for example......\n
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB color format</title>
+</head>
+<style>
+    .redness{
+        color: #fe0208;
+    }
+    .redness1{
+        color: rgb(255, 02, 08);
+    }
+</style>
+<body>
+    <p class="redness">
+        This is written in hexadecimal color format
+    </p>
+    <h1 class="redness1"> This heading is written in RGB color format </h1>
+</body>
+</html> -->
+
+HSB (Hue Saturation Brightness)
+HSL (Hue Saturation Lightness)
+
+Photoshop , Adobe
+border: None; border: dotted;
