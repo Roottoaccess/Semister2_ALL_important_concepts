@@ -74,3 +74,20 @@ HSL (Hue Saturation Lightness)
 
 Photoshop , Adobe
 border: None; border: dotted;
+
+
+Fluid Layout: Fluid layout provide several benefits, such as enhanced user experience by adaption to different
+
+Converting a Fixed Pixel Design to a Fluid Proportional Design......
+
+Fixed width screen size = target / context = result
+
+Target value (960 units) / left-hand side (200 unit): result:.208333333
+
+To get our result with this formula, we need to shift the decimal 
+
+4 benifits of Fluid Layout
+1. Better user experience 
+2. Works well on Mobile
+3. Easy to Read & Ready for future
+4. Loads Quikly

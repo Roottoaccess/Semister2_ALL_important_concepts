@@ -1,0 +1,55 @@
+.container{
+    width: 80%; /* % fluid layout , px pixeled layout */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.header{
+    background-color: #333;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+.nav{
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap; /* Accordiong to your page contain the size should be wrapped */
+}
+.content{
+    flex: 2; /* 3 part , 2/3 area will be taken by this part*/
+    background-color: #ccc;
+    padding: 20px;
+}
+.sidebar{
+    flex: 1;
+    background-color: #aaa;
+    padding: 20px;
+}
+.footer{
+    background-color: #333;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    clear: both;
+    padding: 10px;
+}
+/* Media query */
+@media(max-width:760px){
+    .container{
+        width: 90px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .content,.sidebar{
+        flex: 1;
+    }
+}
