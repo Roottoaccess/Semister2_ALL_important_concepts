@@ -1,0 +1,51 @@
+Java Script
+-> it is web scripting....
+javaScript with HTML, Object Properties and methods, Build-in-JavaScript,
+Browser Object ------------ (DHTML) -> HTML + CSS + JAVASCRIPT (DYNAMIC HTML)
+Document Object Model
+
+JavaScript -> Mocha -> LiveScript
+
+ECMA-262 -> Europian Computers Manufacturers Association -> Standard for JavaScript
+
+Java script is divide into 3 parts 
+Core ->
+Server ->
+Client ->
+
+JavaScript -> Functional Style..Prototype-based..Interpreted Language..Converts static data to dynamic web page
+
+
+Single-threaded but Asynchronous Process -> Not wait for the running task to finish, it will start the remaining tasks.
+
+Client-Side Validation
+
+Java -> required datatype specially (stringly typed language)
+Eg :- int a; float b;
+
+JavaScript -> doesn't required datatype specially (loosely typed language)
+
+Eg :- var a = 12;
+
+Java is an object-oriented programming language
+JavaScript is an Object-based scripting language
+
+Java has a thread-based approach to concurrency.
+JavaScript has a Event-based approach
+
+2 ways to write the JavaScript with html
+
+<script> </script> : Writing javascript inside the same HTML page only..
+
+<script src = "<path>"/> : writing the java script in the external js page..
+
+javascript -> can not support polymorphism
+
+let, var used in javascript
+
+# Primitive DataType
+Number, BigInt, String, Boolean, Undefined, Null, Symbol
+
+# Non-Primitive Datatype
+-> Object
+-> Array
