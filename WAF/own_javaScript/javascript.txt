@@ -1,0 +1,6 @@
+# This is a javascript folder were I am going to work with javascript files
+and understanding all the important concept of java script
+This folder will content all the information regarding java script till the second unit for the exam
+
+So Lets start from today and finish the concept of the java script to work with....
+
