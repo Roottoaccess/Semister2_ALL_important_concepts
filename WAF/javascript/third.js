@@ -62,3 +62,44 @@ Object.assign(person1,person2);
 // Display Target
 let text = Object.entries(person1);
 document.getElementById('ff').innerHTML = text;
+// Convert the given data into a map
+const fruits = {Banana: 300, Orange: 200, Apples: 500};
+const myMap = new Map(Object.entries(fruits));
+document.getElementById("dd").innerHTML = myMap;
+
+// function FreedomFighter(first, last, age, place) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.place = place;
+// }
+
+// // create a fighter object
+// const fighter = new FreedomFighter("Rani","Laxmibai",29,"Jhasi");
+
+// // Displaying new objects
+// document.getElementById('rr').innerHTML = fighter.firstName + " " + fighter.lastName + "was the queen of"+ fighter.place +".";
+
+// function FreedomFighter(first, last, age, place) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.place = place;
+// }
+
+// const fighter = new FreedomFighter("Rani", "Laxmibai", 29, "Jhasi");
+
+// document.getElementById('rr').innerHTML = fighter.firstName + " " + fighter.lastName + "was the queen of"+ fighter.place +".";
+
+const f = [
+    ['apple',300],
+    ['pears',900],
+    ['bananas',500]
+];
+
+const myObj = Object.fromEntries(f);
+// document.getElementById('rr').innerHTML = myObj.pears;
+document.getElementById('rr').innerHTML = "Fruit Banana value: "+ myObj.bananas;
+
+// Convert a value to int, float -> parseInt(), parseFloat(), isNaN()
+// function have a return value for must if you are using a function 
