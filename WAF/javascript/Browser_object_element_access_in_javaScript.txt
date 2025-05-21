@@ -1,0 +1,79 @@
+Browser objects (This is for the study Pourpose.....):-
+🌐 What is Browser Object Element Access in JavaScript?
+In JavaScript, Browser Object Model (BOM) refers to the objects provided by the browser that allow you to interact with the browser window. These objects are not part of the core JavaScript language but are provided by the environment (the browser).
+
+✅ Key Browser Objects:
+
+Object	Purpose
+window	The top-level object representing the browser window
+document	Represents the HTML content of the page
+navigator	Provides information about the browser (e.g., name, version)
+screen	Gives info about the user's screen (e.g., width, height)
+location	Represents the current URL
+history	Allows navigation through browser history
+🛠️ Accessing Elements via Browser Objects
+1. Accessing HTML Elements (via document)
+
+document.getElementById("demo");     // Access by ID
+document.getElementsByClassName("myClass"); // Access by class
+document.getElementsByTagName("p");  // Access by tag
+2. Accessing the Window Object
+
+window.alert("Hello!");  // Same as just alert("Hello!");
+console.log(window.innerWidth);  // Width of the browser window
+3. Getting URL Info (via location)
+
+console.log(location.href);      // Full URL
+console.log(location.hostname);  // Hostname (e.g., www.google.com)
+4. Browser Information (via navigator)
+
+console.log(navigator.userAgent); // Browser and OS info
+console.log(navigator.language); // User's preferred language
+5. Screen Information
+
+console.log(screen.width);
+console.log(screen.height);
+📌 Summary
+Browser Object Element Access in JavaScript refers to:
+
+Using BOM objects (window, document, navigator, etc.)
+To interact with the browser environment and HTML elements on the page.
+🌐 What is Browser Object Element Access in JavaScript?
+In JavaScript, Browser Object Model (BOM) refers to the objects provided by the browser that allow you to interact with the browser window. These objects are not part of the core JavaScript language but are provided by the environment (the browser).
+
+✅ Key Browser Objects:
+
+Object	Purpose
+window	The top-level object representing the browser window
+document	Represents the HTML content of the page
+navigator	Provides information about the browser (e.g., name, version)
+screen	Gives info about the user's screen (e.g., width, height)
+location	Represents the current URL
+history	Allows navigation through browser history
+🛠️ Accessing Elements via Browser Objects
+1. Accessing HTML Elements (via document)
+
+document.getElementById("demo");     // Access by ID
+document.getElementsByClassName("myClass"); // Access by class
+document.getElementsByTagName("p");  // Access by tag
+2. Accessing the Window Object
+
+window.alert("Hello!");  // Same as just alert("Hello!");
+console.log(window.innerWidth);  // Width of the browser window
+3. Getting URL Info (via location)
+
+console.log(location.href);      // Full URL
+console.log(location.hostname);  // Hostname (e.g., www.google.com)
+4. Browser Information (via navigator)
+
+console.log(navigator.userAgent); // Browser and OS info
+console.log(navigator.language); // User's preferred language
+5. Screen Information
+
+console.log(screen.width);
+console.log(screen.height);
+📌 Summary
+Browser Object Element Access in JavaScript refers to:
+
+Using BOM objects (window, document, navigator, etc.)
+To interact with the browser environment and HTML elements on the page.
