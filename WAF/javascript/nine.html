@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using navigator object to display app version and appname of a browser </title>
+    <script>
+        function popup(){
+            var major = parseInt(navigator.appVersion);
+            var minor = parseInt(navigator.appVersion);
+            var agent = navigator.userAgent.toLowerCase();
+            document.write(agent + " " +major);
+            window.alert(agent + " " +minor);
+        }
+    </script>
+</head>
+<body onload="popup()">
+        
+</body>
+</html>

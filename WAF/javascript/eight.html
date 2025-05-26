@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial of a given number</title>
+</head>
+<body>
+    <script>
+        function fact(n){
+            var i, f = 1;
+            for(i = 1;i <= n; i++){
+                f = f * i;
+            }
+            return(f);
+        }
+        var x,n,f;
+        x = prompt("Enter a number: ");
+        f = fact(x);
+        document.write("The factorial of a given number " +x+ " is " +f);
+        document.close();
+    </script>
+</body>
+</html>
