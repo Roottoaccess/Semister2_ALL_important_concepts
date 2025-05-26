@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation using DOM in JavaScript</title>
+</head>
+<style>
+    body{
+        background-color: bisque;
+    }
+    form{
+        border: 2px solid blue;
+        width: 500px;
+    }
+</style>
+<script>
+    function chkname(){
+        var sname=document.getElementById("name");
+        var pos = sname.value.search(/[\w]+/);
+
+        if(sname.value == " "){
+            alert("Enter the name");
+            return false;
+        }
+        if(pos != 0){
+            alert("The format is not correct");
+            sname.select();
+            return false;
+        } else {
+            alert("The format is correct");
+            return true;
+        }
+    }
+    function chkmarks(){
+        var smarks = document.getElementById("marks");
+        var pos = smarks.value.search(/^[0-9][0-9]$/)
+
+    if(smarks.value==' ')
+    {
+        alert("Enter the marks");
+        return false;
+    } 
+        if(pos != 0){
+            alert("Enter the marks as 2 digit number");
+            smarks.select();
+            return false;
+        }
+        else{
+            alert("The marks format is correct");
+            return true;
+        }
+    }
+</script>
+<body>
+    <center>
+        <h3> Validation of student data</h3>
+        <!-- <br><br><br> -->
+        <form action="">
+            <p> Student Name: <input type="text" name="name" id="name">
+            <br><br>
+            <p> web Progg Marks: <input type="text" name="marks" id="marks">
+            <br><br>
+            <input type="submit" id="submit" value="submit-name"
+            onclick="chkname(name)">
+            <input type="submit" id="submit"  value="submit-marks"
+            onclick="chkmarks(marks)">
+            </p></p>
+    </form>
+    </center>
+</body>
+</html>

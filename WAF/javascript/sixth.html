@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: bisque;
+    }
+    img{
+        border: 2px solid black;
+    }
+</style>
+<script>
+    function walking(){
+        document.getElementById("smile").src = 'walking.gif'
+        document.getElementById("smile").alt = 'walk'
+    }
+    function dancing(){
+        document.getElementById("smile").src = 'dancing.gif'
+        document.getElementById("smile").alt = 'dance'
+    }
+</script>
+<body>
+    <center>
+        <u>
+            <h1>Changing Image by the help of DOM manipulation</h1>
+        </u>
+        <img onmouseover="walking()" onmouseout="dancing()" src="dancing.gif" alt="nice" width="300" height="300" id="smile">
+        <p>onmouse out and onmouseover changing image</p>
+    </center>
+</body>
+</html>
