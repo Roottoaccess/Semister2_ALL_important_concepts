@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moving image</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        form{
+            border: 2px solid black;
+            width: 200px;
+        }
+    </style>
+    <script type="text/javascript">
+    function moveIt(movee,newtop, newLeft)
+    {
+        dom = document.getElementById(movee).style;
+        dom.top = newTop + "px";
+        dom.left = newLeft + "px";
+    }
+    </script>
+</head>
+<body>
+    <center>
+        <form action="">
+            <!-- Taking a form for giving the x-axis and y-axis -->
+            <p><label for=""><b> X coordinate: </b>
+                <input type="text" name="leftCoord" id="leftCoord" size="3"></label>
+                <br>
+                <label for="">
+                    <b> Y coordinate: </b>
+                    <input type="text" name="topCord" id="topCord" size="3">
+                </label>
+                <br>
+                <input type="button" value="moveit" onclick="moveIt('frog', document.getElementById('topCord').value,
+                document.getElementById('leftCoord').value)"/>
+            </p>
+        </form>
+    </center>
+</body>
+</html>
