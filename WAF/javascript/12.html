@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moving image</title>
+    <title>Moving Image</title>
     <style>
-        body{
-            background-color: bisque;
-        }
-        form{
+        form {
             border: 2px solid black;
             width: 200px;
+            padding: 10px;
+        }
+
+        #frog {
+            position: absolute;
+            top: 115px;
+            left: 0px;
         }
     </style>
     <script type="text/javascript">
-    function moveIt(movee,newtop, newLeft)
-    {
-        dom = document.getElementById(movee).style;
-        dom.top = newTop + "px";
-        dom.left = newLeft + "px";
-    }
+        function moveIt(movee, newTop, newLeft) {
+            const top = parseInt(newTop);
+            const left = parseInt(newLeft);
+
+            if (!isNaN(top) && !isNaN(left)) {
+                const dom = document.getElementById(movee).style;
+                dom.top = top + "px";
+                dom.left = left + "px";
+            } else {
+                alert("Please enter valid numeric coordinates.");
+            }
+        }
     </script>
 </head>
 <body>
     <center>
-        <form action="">
-            <!-- Taking a form for giving the x-axis and y-axis -->
-            <p><label for=""><b> X coordinate: </b>
-                <input type="text" name="leftCoord" id="leftCoord" size="3"></label>
-                <br>
-                <label for="">
-                    <b> Y coordinate: </b>
-                    <input type="text" name="topCord" id="topCord" size="3">
-                </label>
-                <br>
-                <input type="button" value="moveit" onclick="moveIt('frog', document.getElementById('topCord').value,
-                document.getElementById('leftCoord').value)"/>
+        <u><i>
+            <h1>Frog Baba Jumping Game </h1>
+        </i></u>
+        <form onsubmit="return false;">
+            <p><label><b> X coordinate: </b>
+                <input type="text" id="leftCoord" size="3" />
+            </label>
+            <br>
+            <label><b> Y coordinate: </b>
+                <input type="text" id="topCord" size="3" />
+            </label>
+            <br>
+            <input type="button" value="Move It" onclick="moveIt('frog', document.getElementById('topCord').value, document.getElementById('leftCoord').value)" />
             </p>
         </form>
+
+        <div id="frog">
+            <img src="frog_baba.jpg" width="150" height="150" alt="frog"/>
+            <p>Frog Baba</p>
+        </div>
     </center>
 </body>
 </html>
