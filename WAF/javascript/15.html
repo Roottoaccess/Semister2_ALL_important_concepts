@@ -1,0 +1,36 @@
+<!Doctype html>
+<!-- dynFont.html
+Illustrates dynamic font styles and colours -->
+<html>
+<head>
+  <title>Dynamic Fonts</title>
+  <script type = "text/javascript">
+    function f_dbclick(param) {
+      var dom = document.getElementById(param).style;
+      dom.textDecoration = "underline, overline";
+      dom.textTransform = "Capitalize";
+      dom.fontWeight = "bold";
+      dom.fontVariant = "small-caps";
+      dom.color = "red";
+    }
+  </script>
+  <style type="text/css">
+    .regtext {font:16pt "Times New Roman"}
+    .wordtext {color: teal;}
+  </style>
+</head>
+<body>
+<p class = "regtext">
+The state of 
+<span class = "wordtext" id="state"
+onmouseover="this.style.color = 'red';
+             this.style.fontStyle = 'italic';
+             this.style.fontsize = '24pt'";
+
+onmouseout = "this.style.color = 'blue';
+              this.style.fontStyle = 'normal';
+              this.style.fontsize = '16pt'";
+      
+      
+</body>
+</html>

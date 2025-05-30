@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f_dblclick(param) {
+            var dom = document.getElementById(param).style;
+            dom.textDecoration = 'underline overline';
+            dom.textTransform = 'capitalize';
+            dom.fontWeight = 'bold';
+            dom.color = 'red';
+        }
+    </script>
+    <style>
+        .regText {font: 16pt 'Times New Roman'}
+        .wordText {color: green;}
+    </style>
+</head>
+<body>
+    <center>
+        <p class="regtext">
+            The State of
+            <span class="wordText" id="state"
+            onmouseover="this.style.color = 'red'; this.style.fontStyle = 'italic'; this.style.fontSize = '24pt';"
+            onmouseout="this.style.color = 'blue'; this.style.fontStyle = 'normal'; this.style.fontSize = '16pt';"
+            ondblclick="f_dblclick('state')">
+            Washington
+            </span>
+            produces many of our nation's
+            <span id="apple" ondblclick="f_dblclick('apple');">apple</span>
+        </p>
+    </center>
+</body>
+</html>

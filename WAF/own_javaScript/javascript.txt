@@ -4,3 +4,6 @@ This folder will content all the information regarding java script till the seco
 
 So Lets start from today and finish the concept of the java script to work with....
 
+In the string content there is length attribute
+
+we can also access the elements in the string by usgin the str1[2] -> index value
