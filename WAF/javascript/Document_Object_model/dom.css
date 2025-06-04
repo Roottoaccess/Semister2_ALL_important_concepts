@@ -1,0 +1,20 @@
+body{
+    background-color: bisque;
+}
+
+#heading{
+    color: blue;
+    /* text-decoration: line-through; */
+    text-decoration: overline;
+    background-color: yellow;
+}
+button{
+    background-color: blue;
+    color: white;
+}
+
+.heading2{
+    background-color: aquamarine;
+    color: blueviolet;
+    text-decoration: line-through;
+}

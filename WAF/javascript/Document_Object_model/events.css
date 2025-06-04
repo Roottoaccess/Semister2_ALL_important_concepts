@@ -1,0 +1,13 @@
+/* Giving style using css */
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    margin: 8px;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    /* justify-content: right; */
+}
