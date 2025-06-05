@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table creation using HTML</title>
+</head>
+<style>
+    body{
+        background-color: bisque;
+    }
+    h2{
+        font-family: fantasy;
+        text-decoration: underline;
+        color: blueviolet;
+    }
+    td{
+        padding: 12px;
+    }
+    th{
+        padding: 5px;
+    }
+    .form{
+        margin: 12px;
+        border: 2px solid blue;
+        width: auto;
+        padding: 15px;
+        /* text-align: center; */
+    }
+    .unorder{
+        margin: 12px;
+        border: 2px solid red;
+        /* justify-content: center; */
+        /* text-align: center; */
+    }
+    /* .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;           
+      background-color: #333;
+      padding: 10px 20px;
+      color: white;
+    } */
+    nav{
+        display: flex;
+        justify-content: center;
+        flex: auto;
+        /* padding: 10px 12px; */
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">Services</a> </li>
+            <li> <a href="#">Contact</a> </li>
+        </ul>
+    </nav>
+    <center>
+        <h2>Simple table format in HTML</h2>
+        <div class="table">
+            <table border="2px solid black">
+                <tr>
+                    <th>
+                        SRN No:
+                    </th>
+                    <th>
+                        Name:
+                    </th>
+                    <th>
+                        Department:
+                    </th>
+                    <th>
+                        Skill:
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        PES1PG24CA033
+                    </td>
+                    <td>
+                        Biswarup Dutta
+                    </td>
+                    <td>
+                        MCA
+                    </td>
+                    <td>Python(Machine Learning)</td>
+                </tr>
+                <tr>
+                    <td>
+                        PES1PG24CA000
+                    </td>
+                    <td>
+                        John Ripper
+                    </td>
+                    <td>
+                        Msc Computer Science
+                    </td>
+                    <td rowspan="2">JavaScript (Web Development)</td>
+                </tr>
+                <tr>
+                    <td>
+                        PES1PG24CA000
+                    </td>
+                    <td>
+                        John Ripper
+                    </td>
+                    <td>
+                        Msc Computer Science
+                    </td>
+                    <!-- <td>JavaScript (Web Development)</td> -->
+                </tr>
+            </table>
+        </div>
+        <div class="form">
+            <pre> Basic Form Understanding </pre>
+            <form action="post">
+                <label for="name">Enter you name: </label>
+                <input type="text" id="name" placeholder="Full Name">
+                <label for="Department">Enter you Department: </label>
+                <input type="text" name="dept" id="dept" placeholder="Department name in short">
+                <label for="skill">Enter your skill: </label>
+                <input type="text" name="skill" id="skill" placeholder="Technical skill">
+                <br><br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+        <div class="unorder">
+            <pre>4 types of Hackers</pre>
+            <ul>
+                <li>White Hat</li>
+                <li>Black Hat</li>
+                <li>Gray Hat</li>
+                <li>RedHat</li>
+            </ul>
+            <img src="dancing.gif" alt="skeliton_dancing">
+            <a href="https://en.wikipedia.org/wiki/Lucifer" target="_blank">Check this link</a>
+        </div>
+    </center>
+    </body>
+</html>
